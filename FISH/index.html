@@ -53,6 +53,7 @@
         </div>
         <div class="right-menu list-inline no-margin-bottom">
           <div class="list-inline-item"><a target="_blank" href="/Helps/NewGuideForMining.pdf">新手指导</a></div>
+          <div class="list-inline-item"><a href="javascript:void(0);" data-toggle="modal" data-target="#accountMoreOpenModal">账号多开</a></div>
           <div class="list-inline-item logout"> <a id="btnLogin" href="javascript:void(0);" class="nav-link">登入 <i class="icon-user"></i></a><a id="btnLogout" href="javascript:void(0);" class="nav-link" style="display:none;">登出 <i class="icon-logout"></i></a></div>
         </div>
       </div>
@@ -65,6 +66,14 @@
         <li id='selfminer'><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-windows"></i>自助挖矿 </a>
           <ul id="exampledropdownDropdown" class="collapse list-unstyled show">
             <li id='lidcrash' style="display:none;"><a href="/CRASH">CRASH<span class="badge dashbg-4">New</span></a></li>
+            <li id='lihvt'><a href="/HVT">HVT<span class="badge dashbg-4">New</span></a></li>
+            <li id='lijb'><a href="/JB">JB<span class="badge dashbg-4">New</span></a></li>
+            <li id='liffg'><a href="/FFG">FFG<span class="badge dashbg-4">New</span></a></li>
+            <li id='libest'><a href="/BEST">BEST<span class="badge dashbg-4">New</span></a></li>
+            <li id='lilt' style="display:none;"><a href="/LT">LT<span class="badge dashbg-4">New</span></a></li>
+            <li id='liboss' style="display:none;"><a href="/BOSS">BOSS<span class="badge dashbg-4">New</span></a></li>
+            <li id='lidk'><a href="/DK">DK<span class="badge dashbg-4">New</span></a></li>
+            <li id='limev'><a href="/MEV/BJ">MEV<span class="badge dashbg-4">New</span></a></li>
             <li id='lifish'><a href="/FISH">FISH<span class="badge dashbg-4">New</span></a></li>
             <li id='litxt'><a href="/TXT">TXT<span class="badge dashbg-4">New</span></a></li>
             <li id='lictn'><a href="/CTN">CTN<span class="badge dashbg-4">New</span></a></li>
@@ -143,7 +152,7 @@
               <div class="form-group">
                 <label for="txtAmount">下注</label>
                 <input type="text" class="form-control" id="txtAmount" placeholder="输入注数" value="0.1000 EOS">
-                <small id="txtAmountHelp" class="form-text text-muted">金额请修改为自己想投注金额数量，比如投10EOS，则输入“10.0000 EOS”，注意小数点后需跟4位小数；支持多级下注金额，用|符号隔开。</small>
+                <small id="txtAmountHelp" class="form-text text-muted">项目限制投注金额为0.1-0.7和1-7，如投0.7EOS，则输入“0.7000 EOS”，如投7EOS，则输入“7.0000 EOS”，注意小数点后需跟4位小数；支持多级下注金额，用|符号隔开。</small>
               </div>
               <div class="form-group">
                 <label for="txtRollUnder">鱼类</label>
@@ -153,7 +162,7 @@
               <div class="form-group">
                 <label for="txtReferrals">邀请</label>
                 <input type="text" class="form-control" id="txtReferrals" placeholder="（选填）" value="">
-                <small id="txtReferralsHelp" class="form-text text-muted">请填写邀请人的地址账号。可以向邀请人账号返佣，按照50%几率使用。没有可不填。邀请人不能是自己。</small>
+                <small id="txtReferralsHelp" class="form-text text-muted">请填写邀请人的地址账号。可以向邀请人账号返佣，100%几率使用。没有可不填。邀请人不能是自己。</small>
               </div>
               <div class="form-group">
                 <button type="button" class="btn btn-success btn-sm" id="btnStart">开始</button>
@@ -173,7 +182,7 @@
                 <tr>
                   <th>编号</th>
                   <th>外观</th>
-                  <th>倍率</th>
+                  <th>赔率</th>
                   <th>概率</th>
                 </tr>
                 <tr>
@@ -241,6 +250,12 @@
                   <th style="width:125px;" scope="row"><img src="https://eosfish.io/img/fish11.png" style="height:20px;"></th>
                   <td>50</td>
                   <td>1.96%</td>
+                </tr>
+                <tr>
+                  <th>99</th>
+                  <th style="width:125px;" scope="row"><img src="https://eosfish.io/img/4.png" style="height:20px;"></th>
+                  <td>?</td>
+                  <td>5%</td>
                 </tr>
               </tbody>
             </table>
@@ -321,6 +336,26 @@
           </div>
         </div>
       </footer>
+      <div id="accountMoreOpenModal" tabindex="-1" role="dialog" aria-labelledby="accountMoreOpenModalLabel" aria-hidden="true" class="modal fade text-left">
+        <div role="document" class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header"><strong id="accountMoreOpenModalLabel" class="modal-title">账号多开</strong>
+              <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span aria-hidden="true">×</span></button>
+            </div>
+            <div class="modal-body">
+              <p class="text-center">
+                <a href="https://b1.win96.me" target="_blank">账号1</a>
+                <a href="https://b2.win96.me" target="_blank">账号2</a>
+                <a href="https://b3.win96.me" target="_blank">账号3</a>
+                <a href="https://b4.win96.me" target="_blank">账号4</a>
+                <a href="https://b5.win96.me" target="_blank">账号5</a>
+              </p>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
       <div id="wechatGroupModal" tabindex="-1" role="dialog" aria-labelledby="wechatGroupModalLabel" aria-hidden="true" class="modal fade text-left">
         <div role="document" class="modal-dialog">
           <div class="modal-content">
@@ -406,12 +441,12 @@
   
   
   
-    <script src="/js/fish.min.js?v=JxMhFq8PswlpgGPhWKhoDKExUj2bXp92RJPzdLk6JXY"></script>
+    <script src="/js/fish.min.js?v=YBYflKlspycHLa1_HuQfEXkUNvEb4CMDsuKtRjF7A2w"></script>
   
   <script>
       document.getElementById('selfminer').classList.add('active');
       document.getElementById('lifish').classList.add('active');
-      document.getElementById('txtTimeout').value = '0';
+      document.getElementById('txtTimeout').value = '1000';
   </script>
 
 </body>
